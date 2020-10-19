@@ -1,3 +1,8 @@
+<!-- All formatting and elements created using W3 Schools HTML Tutorials as a reference: https://www.w3schools.com/html/default.asp -->
+<!-- Colour palette inspired by Juniper & Roots "5 Earth-Toned Minimalistic Colour Palettes", url: https://juniperandroots.com/blog/earthy-colour-palettes -->
+/* ontserrat' font imported from Google Fonts into css document, url: https://fonts.google.com/specimen/Montserrat?query=monts -->
+/* Found the proper code to import font into css using the css validator, url: https://jigsaw.w3.org/css-validator/ */
+
 html {
 display: block;
 }
