@@ -1,0 +1,164 @@
+/* All formatting and elements created using W3 Schools HTML Tutorials as a reference: https://www.w3schools.com/html/default.asp */
+/* Colour palette inspired by Juniper & Roots "5 Earth-Toned Minimalistic Colour Palettes", url: https://juniperandroots.com/blog/earthy-colour-palettes */
+/* Montserrat' font imported from Google Fonts into css document, url: https://fonts.google.com/specimen/Montserrat?query=monts */
+/* Found the proper code to import font into css using the css validator, url: https://jigsaw.w3.org/css-validator/ */
+
+html {
+display: block;
+}
+
+head {
+	display: none;
+}
+
+@font-face {
+	font-family : 'Montserrat';
+	font-style : normal;
+	font-weight : 200;
+	font-display : swap;
+	src : local('Montserrat ExtraLight'), local('Montserrat-ExtraLight'), url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_aZA7g4.ttf) format('truetype');
+}
+
+body {
+	display: block;
+	font-family: Serif, "Times New Roman", "Arial";
+	background-color: #cdbfb1;
+	margin:1%;
+	margin-bottom: 10%;
+}
+
+header {
+	display: block;
+	margin: 0px;
+}
+
+/* Links*/
+
+a {
+	color: #f7f3ee;
+	text-decoration: none;
+}
+a.external {
+	color: #8c9086;
+	text-decoration: none;
+}
+/* Header Styles */
+
+h1 {
+	display: block;
+	color: #8f8681;
+	font-family: Montserrat, Helvetica, sans-serif;
+	text-align: center;
+	font-size: 300%;
+	margin: 0px;
+	padding: 30px;
+	background-color: #f5f1ea;
+	font-weight: bold;
+}
+
+h2 {
+	display:block;
+	font-family: Courier New, Helvetica, sans-serif;
+	color: #f7f3ee;
+	text-align: center;
+	font-size: 30px;
+	font-weight: normal
+}
+
+h3 {
+	display: block;
+	color: #74776e;
+	font-family: Montserrat, Helvetica, sans-serif;
+	text-align: left;
+	font-size: 20px;
+	margin-bottom: 15px;
+	margin-top:20px;
+	margin-right: 20%;
+	margin-left: 20%;
+	font-weight: bold;
+}
+
+h4 {
+	display: block;
+	color: #8f8681;
+	font-family: Courier New, Helvetica, sans-serif;
+	text-align: left;
+	font-size: 18px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 20%;
+	margin-right: 20%;
+	padding: 0px;
+	font-weight: bold;
+}
+
+/* Paragraph Styles */
+
+p {
+	display: block;
+	color: #514b48;
+	text-align: justify;
+	font-size: 16px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+p.dates {
+	color: #514b48;
+	text-align: left;
+	font-size: 16px;
+	margin-top: 2px;
+	margin-bottom: 15px;
+	margin-left: 20%;
+	margin-right: 20%;
+	font-style: italic;
+}
+
+/* Navigation Bar */
+ul.nav {
+	display: block;
+	list-style-type: none;
+	margin: 0px;
+	padding: 15px;
+	background-color: #8f8681;
+	text-align: center;
+	color: #1f2e2e;
+}
+
+li.nav {
+	display: inline;
+	font-family: Montserrat, Helvetica, sans-serif;
+	margin: 20px;
+	text-align: center
+}
+
+/* Navigation Bar and Basic List */
+
+ul.basic {
+	display: block;
+	text-align: justify;
+	color: #514b48;
+	font-size: 16px;
+	margin-top: 15px;
+	margin-bottom: 20px;
+	margin-left: 20%;
+	margin-right: 20%;
+	list-style-type: square;
+}
+li.basic {
+	margin: 2px;  
+}
+
+/* image formatting */
+
+img {
+	display: block;
+	float:right;
+	border-style: solid;
+	border-width: 5px;
+	border-color: #f5f1ea;
+	margin-left: 10px;
+	margin-right: 20%;
+}
