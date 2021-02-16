@@ -2,7 +2,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
-  <title>ArcGIS API for JavaScript Tutorials: Add a feature layer</title>
+  <title> Enhanced Tutorial: Add a feature layer</title>
   <style>
     html, body, #viewDiv {
       padding: 0;
@@ -39,12 +39,17 @@
 
   const popupTemplate = {          //popup template
         title: "{Species}",
-        content: "Collected by {Operator}. Tree has a health ranking of {Health}. {Comments}."
+        content: "Collected by {Operator}. Tree has a health ranking of {Health}. Tree has a DBH of {DBH} m and height of {Height} m. {Comments}."
     }
 
 //Tree Collection feature layer (points)
   const treeCollectionLayer = new FeatureLayer({
     url: "https://services3.arcgis.com/1n53O6brDYbO083i/arcgis/rest/services/tree_collection/FeatureServer",
+//    renderer: {
+//         type: "unique-value",
+//         field: "{Species}",
+//         defaultSymbol: { type: "simple-fill" },
+//     },
     popupTemplate: popupTemplate
   });
 
@@ -55,6 +60,7 @@
 
 </head>
 <body>
+    <h1>Tree Health Monitoring around Peterborough and Kawartha Lakes</h1>
   <div id="viewDiv"></div>
 </body>
 </html>
