@@ -8,8 +8,8 @@
     html, body, #viewDiv {
       padding: 0;
       margin: 0;
-      height: 100%;
-      width: 100%;
+      height: 90%;
+      width: 80%;
     }
   </style>
   <link rel="stylesheet" href="https://js.arcgis.com/4.18/esri/themes/light/main.css">
@@ -34,15 +34,18 @@
   const view = new MapView({
     container: "viewDiv",
     map: map,
-    zoom: 5,
-    extent: new Extent({
-      xmin: 3689439.0113999993,
-      ymin: 659338.8599999994,
-      xmax: 9015736.631399997,
-      ymax: 5242088.937100001,
-      spatialReference: new SpatialReference({wkid:7004})
-  })
+    zoom: 3,
+    center: [-101.740710, 65.267935],
+     // Could not get the below extent to work
+  //   extent: new Extent({
+  //     xmin: 3689439.0113999993,
+  //     ymin: 659338.8599999994,
+  //     xmax: 9015736.631399997,
+  //     ymax: 5242088.937100001,
+  //     spatialReference: new SpatialReference({wkid:7004})
+  // });
 });
+
 
 //Canada layer from Luna REST URL
   const CanadaMap = new FeatureLayer({
@@ -56,6 +59,8 @@
 
 </head>
 <body>
+  <h1>Map of Canada</h1>
+  <h2>Explore the Canadian Provinces</h2>
   <div id="viewDiv"></div>
 </body>
 </html>
