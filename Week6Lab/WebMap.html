@@ -31,19 +31,16 @@
     basemap: "arcgis-topographic"
   });
 
-  const ext = new Extent({
-  xmin: 3689439.0113999993,
-  ymin: 659338.8599999994,
-  xmax: 9015736.631399997,
-  ymax: 5242088.937100001,
-  spatialReference: new SpatialReference({wkid:7004})
-});
-
   const view = new MapView({
     container: "viewDiv",
     map: map,
     zoom: 5,
-    extent: ext
+    extent: new Extent({
+      xmin: 3689439.0113999993,
+      ymin: 659338.8599999994,
+      xmax: 9015736.631399997,
+      ymax: 5242088.937100001,
+      spatialReference: new SpatialReference({wkid:7004}),
   });
 
 //Canada layer from Luna REST URL
